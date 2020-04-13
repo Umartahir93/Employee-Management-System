@@ -1,0 +1,24 @@
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+	<changeSet id="STORY-1234-a" author="Umar.tahir">
+		
+		<comment>Creation of Accounting Table</comment>
+		<!-- NEED TO RESOLVE PRE CONDITION ERROR -->
+		
+		<sqlFile
+			path="src/main/resources/db/changelog/sql/20200113_STORY-1234-c.sql" />
+		
+		<sqlFile
+			path="src/main/resources/db/changelog/user-permissions.sql" />
+
+		<rollback>
+			<dropTable schemaName="${schema.name}"
+				tableName="accounting_odc_register" />
+		</rollback>
+
+	</changeSet>
+</databaseChangeLog>

@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS accounting_odc_register
+			(
+			accounting_odc_register_id UUID PRIMARY KEY,
+			pick_vendor_id TEXT,
+			check_number TEXT,
+			check_date DATE,
+			check_amount NUMERIC(19,2),
+			check_type TEXT,
+			void_flag BOOLEAN,
+			report_flag BOOLEAN,
+			user_id_check_writer TEXT,
+			name_check_writer TEXT,
+			user_id_check_voider TEXT,
+			name_check_voider TEXT,
+			journal_companies_original INTEGER,
+			journal_companies_reversal INTEGER,
+			journal_ids_original TEXT,
+			journal_ids_reversal TEXT,
+			journal_descriptions_original TEXT,
+			journal_descriptions_reversal TEXT,
+			void_date DATE,
+			name_code TEXT,
+			n_created_by TEXT,
+			n_created TIMESTAMP,
+			n_last_modified_by TEXT,
+			n_last_modified TIMESTAMP
+			);

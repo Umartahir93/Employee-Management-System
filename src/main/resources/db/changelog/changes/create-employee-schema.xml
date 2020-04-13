@@ -1,0 +1,45 @@
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+         
+<changeSet author="umartahir" id="create-employee-schema">
+	<createTable tableName="EmployeeEntity"
+		remarks="A table to contain all the Employees">
+
+		<column name="id" type="int">
+			<constraints nullable="false" primaryKey="true" />
+		</column>
+		<column name="name" type="varchar(250)">
+			<constraints nullable="false" />
+		</column>
+		<column name="address" type="varchar(250)">
+			<constraints nullable="false" />
+		</column>
+		<column name="qualifications" type="varchar(250)">
+			<constraints nullable="true" />
+		</column>
+		<column name="salary" type="int">
+			<constraints nullable="false" />
+		</column>
+		<column name="experienceInYears" type="int">
+			<constraints nullable="false" />
+		</column>
+		<column name="n_created_by" type="varchar(250)">
+			<constraints nullable="true" />
+		</column>
+		<column name="n_created" type="timestamp">
+			<constraints nullable="true" />
+		</column>
+		<column name="n_last_modified_by" type="varchar(250)">
+			<constraints nullable="true" />
+		</column>
+		<column name="n_last_modified" type="timestamp">
+			<constraints nullable="true" />
+		</column>
+
+	</createTable>
+</changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+
+  postgres-server:
+    image: postgres
+    restart: always
+    container_name: postgres-server
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin 
+    
+  java-app:
+    build: .
+    ports:
+      - 8080:8080

@@ -1,0 +1,17 @@
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+<changeSet author="umartahir" id="insert-employee">
+	<insert tableName="EmployeeEntity">
+		<column name="id" valueNumeric="1" />
+		<column name="name" value="Umar Tahir" />
+		<column name="address" value="Lahore" />
+		<column name="salary" valueNumeric="1" />
+		<column name="experienceInYears" valueNumeric="10" />
+		</insert>
+</changeSet>
+
+</databaseChangeLog>

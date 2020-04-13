@@ -1,0 +1,20 @@
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+<!--   <include file="changes/create-employee-schema.xml" relativeToChangelogFile="true"/> -->
+<!--   <include file="changes/insert-employee-data.xml" relativeToChangelogFile="true"/> -->
+<!--   <include file="changes/rename-table-name.xml" relativeToChangelogFile="true"/> -->
+<!--   <include file="changes/rename-id-field.xml" relativeToChangelogFile="true"/> -->
+<!--   <include file="changes/add-companyname-rename-experienceinyears-field.xml" relativeToChangelogFile="true"/> -->
+
+
+<!-- Create a schema for practise of Liquibase running from command Line -->
+  
+<!--   <include file="changes/20200113_STORY-1234.xml" relativeToChangelogFile="true"/> -->
+
+
+</databaseChangeLog>
