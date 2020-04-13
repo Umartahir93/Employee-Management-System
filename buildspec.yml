@@ -22,6 +22,6 @@ phases:
     
 artifacts:
   files:
-    -target/crud-application-1.0.jar
+    -target/springboot-1.0.jar
 
 
