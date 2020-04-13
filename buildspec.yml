@@ -22,6 +22,6 @@ phases:
     
 artifacts:
   files:
-    - springboot/target/springboot-0.0.1-SNAPSHOT.jar
+    - target/demo-0.0.1-SNAPSHOT.jar
 
 
