@@ -13,7 +13,6 @@ phases:
   build:
     commands:
       - echo Build started on 'date'
-      - cd springboot
       - mvn install
 
   post_build:
